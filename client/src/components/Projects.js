@@ -1,48 +1,49 @@
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
-import { github } from "react-icons-kit/icomoon/github";
+import { github } from "react-icons-kit/icomoon/github"
+import Placeholder from "../assets/image-placeholder-500x500.jpg";
 
 const projects = [
 	{
 		id: 1,
 		title: "Project 1",
 		description: "Description for Project 1",
-		image: "../assets/project1.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project1",
 	},
 	{
 		id: 2,
 		title: "Project 2",
 		description: "Description for Project 2",
-		image: "../assets/project2.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project2",
 	},
 	{
 		id: 3,
 		title: "Project 3",
 		description: "Description for Project 3",
-		image: "../assets/project3.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project3",
 	},
 	{
 		id: 4,
 		title: "Project 4",
 		description: "Description for Project 4",
-		image: "../assets/project4.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project4",
 	},
 	{
 		id: 5,
 		title: "Project 5",
 		description: "Description for Project 5",
-		image: "../assets/project5.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project5",
 	},
 	{
 		id: 6,
 		title: "Project 6",
 		description: "Description for Project 6",
-		image: "../assets/project6.jpg",
+		image: Placeholder,
 		githubLink: "https://github.com/user/project6",
 	},
 ];
@@ -112,8 +113,8 @@ const Header = styled.h1`
 `;
 
 const ProjectCard = styled.div`
-	min-width: 20vw;
-	min-height: 20vh;
+	width: 20vw;
+	height: 20vh;
 	margin: 2vh 1vw;
 	overflow: hidden;
 	position: relative;
@@ -146,16 +147,19 @@ const HoverContent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
 	opacity: 0;
 	color: #7ccdf4;
 	transition: opacity 0.3s ease-in-out;
 	${ProjectCard}:hover & {
 		opacity: 1;
 		background-color: #23233b;
+		margin: 0;
 	}
-
-	h3 {
-		margin-bottom: 10px;
+	p{
+		text-align: center;
+		font-size: xx-small;
+		margin: 0;
 	}
 `;
 
