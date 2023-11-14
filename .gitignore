@@ -1,0 +1,6 @@
+# ignore the .env file in the server folder
+.env
+
+#ingore the keys.js file in client folder
+
+/client/src/keys.js
