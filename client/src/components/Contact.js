@@ -223,8 +223,8 @@ const StyledIconsContainer = styled.div`
 
         &:hover {
             color: #00a9e2;
-            transform: scale(1.20);
-            transition: transform 0.75s ease;
+            transform: scale(1.15);
+            transition: transform 1s ease;
 
             span {
                 opacity: 1;

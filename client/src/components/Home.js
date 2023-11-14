@@ -17,7 +17,7 @@ const Home = () => {
 					<MediumText>I am</MediumText>
 					<BigText>Daniel Farrell</BigText>
 					<MediumText>a Full Stack Web Developer</MediumText>
-					<SmallText>Scroll down to get to know me better!</SmallText>
+					<SmallText>Get to know me better!</SmallText>
 				</TextContainer>
 				<ImageContainer>
 					<StyledImage

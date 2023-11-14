@@ -131,7 +131,7 @@ const RightColumn = styled(Column)`
 
 		&:hover {
 			background-color: #b2b0b0;
-			transform: scale(1.5);
+			transform: scale(1.25);
 		}
 	}
 `;

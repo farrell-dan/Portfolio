@@ -119,10 +119,10 @@ const ProjectCard = styled.div`
 	overflow: hidden;
 	position: relative;
 
-	transition: transform 0.3s ease-in-out;
+	transition: transform 1s ease-in-out;
 
 	&:hover {
-		transform: scale(1.25);
+		transform: scale(1.15);
 	}
 `;
 
@@ -150,7 +150,7 @@ const HoverContent = styled.div`
 	margin: 0;
 	opacity: 0;
 	color: #7ccdf4;
-	transition: opacity 0.3s ease-in-out;
+	transition: opacity 1s ease-in-out;
 	${ProjectCard}:hover & {
 		opacity: 1;
 		background-color: #23233b;
