@@ -1,14 +1,20 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-// import keys from "../keys";
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 import { linkedin } from "react-icons-kit/icomoon/linkedin";
 import { github } from "react-icons-kit/icomoon/github";
 
-const YOUR_SERVICE_ID = process.env.REACT_APP_YOUR_SERVICE_ID;
-const YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_YOUR_TEMPLATE_ID;
-const YOUR_PUBLIC_ID = process.env.REACT_APP_YOUR_PUBLIC_ID;
+
+
+const YOUR_SERVICE_ID = process.env.REACT_APP_YOUR_SERVICE_ID
+const YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
+const YOUR_PUBLIC_KEY = process.env.REACT_APP_YOUR_PUBLIC_KEY;
+
+console.log(YOUR_SERVICE_ID);
+console.log(YOUR_TEMPLATE_ID);
+console.log(YOUR_PUBLIC_KEY);
+
 
 const ContactMe = () => {
 	const form = useRef();
@@ -24,7 +30,7 @@ const ContactMe = () => {
 					YOUR_SERVICE_ID,
 					YOUR_TEMPLATE_ID,
 					form.current,
-					YOUR_PUBLIC_ID
+					YOUR_PUBLIC_KEY
 				)
 				.then(
 					(result) => {
