@@ -11,10 +11,6 @@ const YOUR_SERVICE_ID = process.env.REACT_APP_YOUR_SERVICE_ID
 const YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
 const YOUR_PUBLIC_KEY = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
-console.log(YOUR_SERVICE_ID);
-console.log(YOUR_TEMPLATE_ID);
-console.log(YOUR_PUBLIC_KEY);
-
 
 const ContactMe = () => {
 	const form = useRef();
@@ -25,6 +21,9 @@ const ContactMe = () => {
 		e.preventDefault();
 
 		if (!formSubmitted) {
+
+			console.log("Public Key:", YOUR_PUBLIC_KEY);
+
 			emailjs
 				.sendForm(
 					YOUR_SERVICE_ID,
