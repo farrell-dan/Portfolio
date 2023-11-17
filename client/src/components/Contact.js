@@ -22,8 +22,6 @@ const ContactMe = () => {
 
 		if (!formSubmitted) {
 
-			console.log("Public Key:", YOUR_PUBLIC_KEY);
-
 			emailjs
 				.sendForm(
 					YOUR_SERVICE_ID,
