@@ -7,7 +7,7 @@ import AboutMe from "./AboutMe";
 import ContactMe from "./Contact";
 import Home from "./Home";
 import Projects from "./Projects";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 import styled from "styled-components";
 
 const App = () => {
