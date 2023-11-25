@@ -52,8 +52,7 @@ const Container = styled.div`
 	align-items: center;
 	justify-content: space-evenly;
 	width: 80vw;
-	height: 80vh;
-	min-width: 680px;
+	min-width: 450px;
 	min-height: 610px;
 	margin: 20px auto;
 	background-color: #2c4268;
@@ -71,6 +70,7 @@ const Container = styled.div`
 
 const ContentContainer = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: start;
 `;
@@ -78,7 +78,8 @@ const ContentContainer = styled.div`
 const Column = styled.div`
 	width: 45%;
 	text-align: center;
-	margin-left: 10px;
+	margin: 0 10px;
+	padding-bottom: 30px;
 
 	h2 {
 		font-family: "Roboto", sans-serif;
@@ -93,6 +94,11 @@ const Column = styled.div`
 		font-weight: 100;
 		color: #ebebeb;
 	}
+
+	@media (max-width: 900px) {
+    width: 100%; 
+	border-bottom: black solid 3px;
+  }
 `;
 
 const RightColumn = styled(Column)`
@@ -100,7 +106,8 @@ const RightColumn = styled(Column)`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-right: 10px;
+	padding-top: 20px;
+	margin: 0 10px;
 	h2 {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
@@ -126,7 +133,7 @@ const RightColumn = styled(Column)`
 		border: none;
 		cursor: pointer;
 		height: 4vh;
-		width: 10vw;
+		min-width: 10vw;
 		transition: background-color 1s ease, transform 1s ease;
 
 		&:hover {

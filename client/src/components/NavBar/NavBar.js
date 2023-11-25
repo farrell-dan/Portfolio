@@ -74,9 +74,10 @@ export default NavBar;
 
 const StyledNav = styled.nav`
 	display: flex;
+	flex-wrap: wrap;
 	justify-content:flex-end;
 	align-items: center;
-	height: 8vh;
+	min-height: 5rem;
 	background-color: #040a1d;
 	--gap: 0;
 `;
@@ -99,7 +100,7 @@ const StyledLink = styled(Link)`
 	text-decoration: none;
 	color: #c5c6c6;
 	cursor: pointer;
-	font-size: 3vh;
+	font-size: 1.5rem;
 	font-family: "Roboto", sans-serif;
 
 	&:hover {

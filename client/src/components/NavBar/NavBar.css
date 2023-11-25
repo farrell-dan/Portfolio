@@ -1,5 +1,6 @@
 .flex {
 	display: flex;
+    flex-wrap: wrap;
 	gap: var(--gap, 4rem);
 }
 .resize-animation-stopper * {

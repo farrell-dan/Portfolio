@@ -58,7 +58,7 @@ const TextContainer = styled.div`
 `;
 
 const BigText = styled.h1`
-	font-size: 6vw;
+	font-size: 7vw;
 	margin: 0;
 	font-weight: 900;
 	background: linear-gradient(#00A9E2, #7ccdf4);
