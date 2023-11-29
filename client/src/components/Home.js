@@ -38,12 +38,12 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: calc(100vh - 60px);
+	width: 80vw;
+	margin: 5vh auto;
 `;
 
 const Content = styled.div`
 	display: flex;
-	width: 80%;
 	background-color: #2c4268;
 	border-radius: 10px;
 `;
@@ -92,15 +92,15 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-	width: 115%;
-	height: 115%; 
+	max-width: 115%;
+	max-height: 115%; 
 	border-radius: 50%;
 	object-fit: cover;
 	transition: transform 1s ease, opacity 3s ease;
 	box-shadow: 0 0 0 4px #EBEBEB, 0 0 0 10px #23233B;
 
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.015);
 		opacity: 0.85;
 	}
 `;

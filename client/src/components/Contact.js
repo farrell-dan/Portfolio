@@ -117,8 +117,8 @@ const StyledContactContainerWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 80vh;
-	margin-top: 5vh;
+	width: 80vw;
+	margin: 5vh auto;
 `;
 
 const StyledContactContainer = styled.div`

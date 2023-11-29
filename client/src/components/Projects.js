@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
-import { github } from "react-icons-kit/icomoon/github"
+import { github } from "react-icons-kit/icomoon/github";
 import Placeholder from "../assets/image-placeholder-500x500.jpg";
 
 const projects = [
@@ -53,24 +53,27 @@ const Portfolio = () => {
 		<CenteredContainer>
 			<PortfolioContainer>
 				<Header>My Projects</Header>
-				{projects.map((project) => (
-					<ProjectCard key={project.id}>
-						<ProjectImageContainer>
-							<ProjectImage src={project.image} alt={project.title} />
-							<HoverContent>
-								<h3>{project.title}</h3>
-								<p>{project.description}</p>
-								<GitHubIcon
-									href={project.githubLink}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<Icon size={32} icon={github} />
-								</GitHubIcon>
-							</HoverContent>
-						</ProjectImageContainer>
-					</ProjectCard>
-				))}
+				<UpdatesMessage>Updates coming soon</UpdatesMessage>
+				<ProjectsContainer>
+					{projects.map((project) => (
+						<ProjectCard key={project.id}>
+							<ProjectImageContainer>
+								<ProjectImage src={project.image} alt={project.title} />
+								<HoverContent>
+									<h3>{project.title}</h3>
+									<p>{project.description}</p>
+									<GitHubIcon
+										href={project.githubLink}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Icon size={32} icon={github} />
+									</GitHubIcon>
+								</HoverContent>
+							</ProjectImageContainer>
+						</ProjectCard>
+					))}
+				</ProjectsContainer>
 			</PortfolioContainer>
 		</CenteredContainer>
 	);
@@ -82,20 +85,21 @@ const CenteredContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5vh;
-	height: 80vh;
+	margin: 5vh auto;
+	padding-bottom: 3vh;
+	width: 80vw;
 `;
 
 const PortfolioContainer = styled.div`
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #2c4268;
 	padding: 20px;
-	height: 80vh;
 	width: 80vw;
-	border-radius: 5%;
+	border-radius: 10px;
 	font-family: "Archivo", sans-serif;
 	font-weight: 100;
 	color: #ebebeb;
@@ -112,22 +116,41 @@ const Header = styled.h1`
 	color: #ebebeb;
 `;
 
+const UpdatesMessage = styled.p`
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	color: #ebebeb;
+	margin-top: 10px;
+`;
+
+const ProjectsContainer = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	max-width: 100%;
+	margin: 0 auto;
+`;
+
 const ProjectCard = styled.div`
-	width: 20vw;
-	height: 20vh;
-	margin: 2vh 1vw;
+	width: 100%;
 	overflow: hidden;
 	position: relative;
-
 	transition: transform 1s ease-in-out;
 
 	&:hover {
-		transform: scale(1.15);
+		transform: scale(1.05);
 	}
 `;
 
 const ProjectImageContainer = styled.div`
 	position: relative;
+	height: 275px;
+	width: 275px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 `;
 
 const ProjectImage = styled.img`
@@ -156,7 +179,7 @@ const HoverContent = styled.div`
 		background-color: #23233b;
 		margin: 0;
 	}
-	p{
+	p {
 		text-align: center;
 		font-size: xx-small;
 		margin: 0;

@@ -54,16 +54,15 @@ const Container = styled.div`
 	width: 80vw;
 	min-width: 450px;
 	min-height: 610px;
-	margin: 20px auto;
+	margin: 5vh auto;
 	background-color: #2c4268;
-	padding: 20px;
-	border-radius: 5%;
+	border-radius: 10px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	color: #ebebeb;
 
 	h1 {
-		font-size: 5vh;
+		font-size: 3.5rem;
 		margin: 0;
 	}
 `;
@@ -84,6 +83,7 @@ const Column = styled.div`
 	h2 {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
+		font-size: 2.25rem;
 		color: #ebebeb;
 	}
 
@@ -92,6 +92,7 @@ const Column = styled.div`
 		text-align: justify;
 		font-family: "Archivo", sans-serif;
 		font-weight: 100;
+		font-size: 1.25rem;
 		color: #ebebeb;
 	}
 
@@ -106,7 +107,7 @@ const RightColumn = styled(Column)`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 20px;
+	
 	margin: 0 10px;
 	h2 {
 		font-family: "Roboto", sans-serif;
