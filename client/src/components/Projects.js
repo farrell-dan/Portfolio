@@ -2,50 +2,55 @@ import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 import { github } from "react-icons-kit/icomoon/github";
 import Placeholder from "../assets/image-placeholder-500x500.jpg";
+import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png"
+import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png"
+import SlingAirImgae from "../assets/Project_Screenshots/Project SlingAir.png"
+import PortfolioImage from "../assets/Project_Screenshots/Portfolio.png"
+import ECommerceImage from "../assets/Project_Screenshots/E-Commerce Project.png"
 
 const projects = [
 	{
 		id: 1,
-		title: "Project 1",
-		description: "Description for Project 1",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project1",
+		title: "Project Nyan Cat",
+		description: "The first project that I worked on during my bootcamp using html, css and javascript.",
+		image: NyanCatImage,
+		githubLink: "https://github.com/farrell-dan/concordia-project-js-nyan-cat",
 	},
 	{
 		id: 2,
-		title: "Project 2",
-		description: "Description for Project 2",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project2",
+		title: "Project SlingAir",
+		description: "My first team project, working only on the backend of the website.",
+		image: SlingAirImgae,
+		githubLink: "https://github.com/farrell-dan/concordia-project-slingair",
 	},
 	{
 		id: 3,
-		title: "Project 3",
-		description: "Description for Project 3",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project3",
+		title: "Portfolio Project",
+		description: "Using HTML, CSS, JavaScript, and React I had to create a clean and responsive portfolio to showcase my design and development skills.",
+		image: PortfolioImage,
+		githubLink: "https://github.com/farrell-dan/Portfolio",
 	},
 	{
 		id: 4,
-		title: "Project 4",
-		description: "Description for Project 4",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project4",
+		title: "E-Commerce Project",
+		description: "Another group project, the first time that we had to connect our frontend and backend code.",
+		image: ECommerceImage,
+		githubLink: "https://github.com/farrell-dan/project-GROUP-e-commerce",
 	},
 	{
 		id: 5,
-		title: "Project 5",
-		description: "Description for Project 5",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project5",
+		title: "mySportsCal",
+		description: "The final project of the bootcamp. Again linking frontend and backend code ",
+		image: mySportsCalImage,
+		githubLink: "https://github.com/farrell-dan/mysportscal---final-project",
 	},
-	{
-		id: 6,
-		title: "Project 6",
-		description: "Description for Project 6",
-		image: Placeholder,
-		githubLink: "https://github.com/user/project6",
-	},
+	// {
+	// 	id: 6,
+	// 	title: "Project 6",
+	// 	description: "Description for Project 6",
+	// 	image: Placeholder,
+	// 	githubLink: "https://github.com/user/project5",
+	// },
 ];
 
 const Portfolio = () => {
@@ -53,7 +58,7 @@ const Portfolio = () => {
 		<CenteredContainer>
 			<PortfolioContainer>
 				<Header>My Projects</Header>
-				<UpdatesMessage>Updates coming soon</UpdatesMessage>
+				{/* <UpdatesMessage>Updates coming soon</UpdatesMessage> */}
 				<ProjectsContainer>
 					{projects.map((project) => (
 						<ProjectCard key={project.id}>
