@@ -16,7 +16,6 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-
 	background: hsl(0 0% 0% / 0.8);
 }
 
@@ -50,9 +49,8 @@
 		display: block;
 		position: absolute;
 		z-index: 9999;
-		background: url("../../assets/Hamburger_icon.svg.png") center/cover
-			no-repeat;
-		background-color: pink;
+		background: url("../../assets/menu.png") center/cover no-repeat;
+		background-color: white;
 		width: 2rem;
 		border: 0;
 		aspect-ratio: 1;
@@ -60,10 +58,9 @@
 		right: 2rem;
 	}
 
-	/* can add an x -icon here for when the nav bar is open. */
 	.mobile-nav-toggle[aria-expanded="true"] {
-		background: url("../../assets/Hamburger_icon.svg.png") center/cover
+		background: url("../../assets/close.png") center/cover
 			no-repeat;
-		background-color: red;
+		background-color: white;
 	}
 }

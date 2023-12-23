@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import styled from "styled-components";
 import "./NavBar.css";
 
 const NavBar = () => {
+	const location = useLocation();
+
 	useEffect(() => {
 		const primaryNav = document.querySelector(".primary-navigation");
 		const navToggle = document.querySelector(".mobile-nav-toggle");
@@ -29,6 +31,11 @@ const NavBar = () => {
 		}, 400);
 	});
 
+	const closeMenu = () => {
+		const primaryNav = document.querySelector(".primary-navigation");
+		primaryNav.setAttribute("data-visible", "false");
+	};
+
 	return (
 		<div>
 			<button
@@ -44,26 +51,16 @@ const NavBar = () => {
 					data-visible="false"
 					className="primary-navigation flex"
 				>
-					<StyledLi className="active">
-						<StyledLink aria-hidden="true" to="/">
-							Home
-						</StyledLink>
-					</StyledLi>
-					<StyledLi>
-						<StyledLink aria-hidden="true" to="/about-me">
-							About Me
-						</StyledLink>
-					</StyledLi>
-					<StyledLi>
-						<StyledLink aria-hidden="true" to="/projects">
-							Projects
-						</StyledLink>
-					</StyledLi>
-					<StyledLi>
-						<StyledLink aria-hidden="true" to="/contact">
-							Contact Me
-						</StyledLink>
-					</StyledLi>
+					{menuItems.map((menuItem) => (
+						<StyledLi
+							key={menuItem.path}
+							className={location.pathname === menuItem.path ? "active" : ""}
+						>
+							<StyledLink to={menuItem.path} onClick={closeMenu}>
+								{menuItem.label}
+							</StyledLink>
+						</StyledLi>
+					))}
 				</StyledUl>
 			</StyledNav>
 		</div>
@@ -72,10 +69,17 @@ const NavBar = () => {
 
 export default NavBar;
 
+const menuItems = [
+	{ path: "/", label: "Home" },
+	{ path: "/about-me", label: "About Me" },
+	{ path: "/projects", label: "Projects" },
+	{ path: "/contact", label: "Contact Me" },
+];
+
 const StyledNav = styled.nav`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:flex-end;
+	justify-content: flex-end;
 	align-items: center;
 	min-height: 5rem;
 	background-color: #040a1d;

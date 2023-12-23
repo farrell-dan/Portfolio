@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 import { github } from "react-icons-kit/icomoon/github";
-import Placeholder from "../assets/image-placeholder-500x500.jpg";
+// import Placeholder from "../assets/image-placeholder-500x500.jpg";
 import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png"
 import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png"
 import SlingAirImgae from "../assets/Project_Screenshots/Project SlingAir.png"
@@ -58,7 +58,6 @@ const Portfolio = () => {
 		<CenteredContainer>
 			<PortfolioContainer>
 				<Header>My Projects</Header>
-				{/* <UpdatesMessage>Updates coming soon</UpdatesMessage> */}
 				<ProjectsContainer>
 					{projects.map((project) => (
 						<ProjectCard key={project.id}>
@@ -91,7 +90,6 @@ const CenteredContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: 5vh auto;
-	padding-bottom: 3vh;
 	width: 80vw;
 `;
 
@@ -102,8 +100,7 @@ const PortfolioContainer = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #2c4268;
-	padding: 20px;
-	width: 80vw;
+	min-width: 80vw;
 	border-radius: 10px;
 	font-family: "Archivo", sans-serif;
 	font-weight: 100;
@@ -111,7 +108,7 @@ const PortfolioContainer = styled.div`
 `;
 
 const Header = styled.h1`
-	width: 100%;
+	
 	text-align: center;
 	margin: 0;
 	font-size: 5vh;
@@ -119,22 +116,17 @@ const Header = styled.h1`
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	color: #ebebeb;
+	padding: 20px;
 `;
 
-const UpdatesMessage = styled.p`
-	display: flex;
-	flex-direction: column;
-	font-size: 1rem;
-	color: #ebebeb;
-	margin-top: 10px;
-`;
+
 
 const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px;
 	max-width: 100%;
-	margin: 0 auto;
+	padding: 20px;
 `;
 
 const ProjectCard = styled.div`
@@ -161,7 +153,7 @@ const ProjectImageContainer = styled.div`
 const ProjectImage = styled.img`
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: fill;
 `;
 
 const HoverContent = styled.div`
