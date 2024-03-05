@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 import { github } from "react-icons-kit/icomoon/github";
+import {display} from 'react-icons-kit/icomoon/display'
 // import Placeholder from "../assets/image-placeholder-500x500.jpg";
 import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png"
 import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png"
@@ -71,8 +72,19 @@ const Portfolio = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
+										
+
 										<Icon size={32} icon={github} />
 									</GitHubIcon>
+
+									<DisplayIcon
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Icon size={32} icon={display} />
+									</DisplayIcon>
+
+									
 								</HoverContent>
 							</ProjectImageContainer>
 						</ProjectCard>
@@ -184,6 +196,17 @@ const HoverContent = styled.div`
 `;
 
 const GitHubIcon = styled.a`
+	margin-top: 10px;
+	text-decoration: none;
+	color: #7ccdf4;
+	cursor: pointer;
+
+	:hover {
+		color: #ebebeb;
+	}
+`;
+
+const DisplayIcon = styled.a`
 	margin-top: 10px;
 	text-decoration: none;
 	color: #7ccdf4;
