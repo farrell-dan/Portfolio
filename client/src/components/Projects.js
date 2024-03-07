@@ -59,6 +59,7 @@ const Portfolio = () => {
 		<CenteredContainer>
 			<PortfolioContainer>
 				<Header>My Projects</Header>
+				<p>Click on the project to see more information on it and go to the product page.</p>
 				<ProjectsContainer>
 					{projects.map((project) => (
 						<ProjectCard key={project.id}>
