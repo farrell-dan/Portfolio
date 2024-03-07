@@ -1,47 +1,53 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
 import { github } from "react-icons-kit/icomoon/github";
-import {display} from 'react-icons-kit/icomoon/display'
+import { display } from "react-icons-kit/icomoon/display";
 // import Placeholder from "../assets/image-placeholder-500x500.jpg";
-import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png"
-import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png"
-import SlingAirImgae from "../assets/Project_Screenshots/Project SlingAir.png"
-import PortfolioImage from "../assets/Project_Screenshots/Portfolio.png"
-import ECommerceImage from "../assets/Project_Screenshots/E-Commerce Project.png"
+import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png";
+import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png";
+import SlingAirImgae from "../assets/Project_Screenshots/Project SlingAir.png";
+import PortfolioImage from "../assets/Project_Screenshots/Portfolio.png";
+import ECommerceImage from "../assets/Project_Screenshots/E-Commerce Project.png";
 
 const projects = [
 	{
 		id: 1,
 		title: "Project Nyan Cat",
-		description: "The first project that I worked on during my bootcamp using html, css and javascript.",
+		description:
+			"The first project that I worked on during my bootcamp using html, css and javascript.",
 		image: NyanCatImage,
 		githubLink: "https://github.com/farrell-dan/concordia-project-js-nyan-cat",
 	},
 	{
 		id: 2,
 		title: "Project SlingAir",
-		description: "My first team project, working only on the backend of the website.",
+		description:
+			"My first team project, working only on the backend of the website.",
 		image: SlingAirImgae,
 		githubLink: "https://github.com/farrell-dan/concordia-project-slingair",
 	},
 	{
 		id: 3,
 		title: "Portfolio Project",
-		description: "Using HTML, CSS, JavaScript, and React I had to create a clean and responsive portfolio to showcase my design and development skills.",
+		description:
+			"Using HTML, CSS, JavaScript, and React I had to create a clean and responsive portfolio to showcase my design and development skills.",
 		image: PortfolioImage,
 		githubLink: "https://github.com/farrell-dan/Portfolio",
 	},
 	{
 		id: 4,
 		title: "E-Commerce Project",
-		description: "Another group project, the first time that we had to connect our frontend and backend code.",
+		description:
+			"Another group project, the first time that we had to connect our frontend and backend code.",
 		image: ECommerceImage,
 		githubLink: "https://github.com/farrell-dan/project-GROUP-e-commerce",
 	},
 	{
 		id: 5,
 		title: "mySportsCal",
-		description: "The final project of the bootcamp. Again linking frontend and backend code ",
+		description:
+			"The final project of the bootcamp. Again linking frontend and backend code ",
 		image: mySportsCalImage,
 		githubLink: "https://github.com/farrell-dan/mysportscal---final-project",
 	},
@@ -59,12 +65,17 @@ const Portfolio = () => {
 		<CenteredContainer>
 			<PortfolioContainer>
 				<Header>My Projects</Header>
-				<p>Click on the project to see more information on it and go to the product page.</p>
+				<p>
+					Click on the project to see more information on it and go to the
+					product page.
+				</p>
 				<ProjectsContainer>
 					{projects.map((project) => (
 						<ProjectCard key={project.id}>
 							<ProjectImageContainer>
-								<ProjectImage src={project.image} alt={project.title} />
+								<Link to={`/projects/${project.title}`}>
+									<ProjectImage src={project.image} alt={project.title} />
+								</Link>
 								<HoverContent>
 									<h3>{project.title}</h3>
 									<p>{project.description}</p>
@@ -73,19 +84,12 @@ const Portfolio = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										
-
 										<Icon size={32} icon={github} />
 									</GitHubIcon>
 
-									<DisplayIcon
-										target="_blank"
-										rel="noopener noreferrer"
-									>
+									<DisplayIcon target="_blank" rel="noopener noreferrer">
 										<Icon size={32} icon={display} />
 									</DisplayIcon>
-
-									
 								</HoverContent>
 							</ProjectImageContainer>
 						</ProjectCard>
@@ -121,7 +125,6 @@ const PortfolioContainer = styled.div`
 `;
 
 const Header = styled.h1`
-	
 	text-align: center;
 	margin: 0;
 	font-size: 5vh;
@@ -131,8 +134,6 @@ const Header = styled.h1`
 	color: #ebebeb;
 	padding: 20px;
 `;
-
-
 
 const ProjectsContainer = styled.div`
 	display: grid;
@@ -161,6 +162,12 @@ const ProjectImageContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 `;
 
 const ProjectImage = styled.img`
