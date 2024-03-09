@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const AboutMe = () => {
 	return (
-		<Container>
+		<Container id="about-me">
 			<h1>About Me</h1>
 			<ContentContainer>
 				<Column>
