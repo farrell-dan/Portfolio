@@ -18,12 +18,10 @@ import AboutMe from "./AboutMe";
 					<NavBar />
 				</NavBarContainer>
 				<ContentContainer>
-					<Switch>
-						<Route path="/" element={<Home />} />
-						<Route path="/about-me" element={<AboutMe />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<ContactMe />} />
-					</Switch>
+						<Home />
+						<AboutMe />
+						<Projects />
+						<ContactMe />
 				</ContentContainer>
 			</AppContainer>
 		</Router>

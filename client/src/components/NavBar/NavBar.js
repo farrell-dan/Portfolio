@@ -51,7 +51,13 @@ const NavBar = () => {
 					data-visible="false"
 					className="primary-navigation flex"
 				>
-					{menuItems.map((menuItem) => (
+
+<StyledLi className="nav__item"><StyledLink href="#home" className="nav__link active">Home</StyledLink></StyledLi>
+            <StyledLi className="nav__item"><StyledLink href="#about" className="nav__link">About Me</StyledLink></StyledLi>
+            <StyledLi className="nav__item"><StyledLink href="#project" className="nav__link">Projects</StyledLink></StyledLi>
+            <StyledLi className="nav__item"><StyledLink href="#CV" className="nav__link">Contact</StyledLink></StyledLi>
+
+					{/* {menuItems.map((menuItem) => (
 						<StyledLi
 							key={menuItem.path}
 							className={location.pathname === menuItem.path ? "active" : ""}
@@ -60,7 +66,7 @@ const NavBar = () => {
 								{menuItem.label}
 							</StyledLink>
 						</StyledLi>
-					))}
+					))} */}	
 				</StyledUl>
 			</StyledNav>
 		</div>
@@ -100,7 +106,7 @@ const StyledLi = styled.li`
 	}
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
 	text-decoration: none;
 	color: #c5c6c6;
 	cursor: pointer;
