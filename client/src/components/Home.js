@@ -90,14 +90,17 @@ const ImageContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 0;
 `;
 
 const StyledImage = styled.img`
+z-index: auto;
 	max-width: 115%;
 	max-height: 115%; 
 	border-radius: 50%;
 	object-fit: cover;
-	transition: transform 1s ease, opacity 3s ease;
+	transition: transform 1s ease, opacity 3s ease, filter 3s ease;
+	
 	box-shadow: 0 0 0 4px #EBEBEB, 0 0 0 10px #23233B;
 
 	&:hover {

@@ -5,8 +5,9 @@ import styled from "styled-components";
 const AboutMe = () => {
 	return (
 		<Container id="about">
-			<h1>About Me</h1>
+			
 			<ContentContainer>
+			<h1>About Me</h1>
 				<Column>
 					<h2>Biography</h2>
 					<p>
@@ -64,6 +65,8 @@ const Container = styled.section`
 	h1 {
 		font-size: 3.5rem;
 		margin: 0;
+		width: 100%;
+		text-align: center;
 	}
 `;
 

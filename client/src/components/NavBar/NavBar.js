@@ -98,6 +98,11 @@ export default NavBar;
 // ];
 
 const StyledNav = styled.nav`
+position: fixed;
+z-index: 100;
+top: 0;
+right: 0;
+width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;

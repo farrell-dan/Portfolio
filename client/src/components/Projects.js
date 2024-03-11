@@ -162,6 +162,7 @@ const ProjectImageContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	z-index: 5;
 
 	a {
 		display: block;
@@ -174,6 +175,7 @@ const ProjectImage = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: fill;
+	z-index: 10;
 `;
 
 const HoverContent = styled.div`

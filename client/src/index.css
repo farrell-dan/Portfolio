@@ -1,0 +1,14 @@
+body {
+    margin: 2.5rem;
+    padding: 0;
+    border: 0;
+    background-image: url("../public/abstract-blue-fractal-wave-technology-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+}

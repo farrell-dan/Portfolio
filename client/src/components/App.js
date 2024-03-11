@@ -14,9 +14,7 @@ import AboutMe from "./AboutMe";
 	return (
 		<Router>
 			<AppContainer>
-				<NavBarContainer>
 					<NavBar />
-				</NavBarContainer>
 				<ContentContainer>
 						<Home />
 						<AboutMe />
