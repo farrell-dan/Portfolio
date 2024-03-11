@@ -11,7 +11,7 @@ const Home = () => {
 	};
 
 	return (
-		<Container>
+		<Container id="home">
 			<Content>
 				<TextContainer>
 					<MediumText>I am</MediumText>
@@ -35,7 +35,7 @@ const Home = () => {
 export default Home;
 
 
-const Container = styled.div`
+const Container = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: center;

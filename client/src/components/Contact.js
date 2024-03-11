@@ -41,12 +41,15 @@ const ContactMe = () => {
 	};
 
 	return (
-	
-		<StyledContactContainerWrapper id="text">
+		<StyledContactContainerWrapper id="contact">
 			<StyledContactContainer>
 				<StyledContactForm>
 					<h1> Contact Me</h1>
-					<p>Send me an email directly through the form bellow. Or check out my profiles on LinkedIn and GitHub by clicking on the icons bellow the form.</p>
+					<p>
+						Send me an email directly through the form bellow. Or check out my
+						profiles on LinkedIn and GitHub by clicking on the icons bellow the
+						form.
+					</p>
 					{isMessageSent && (
 						<div className="success-message">Message sent successfully!</div>
 					)}
@@ -115,7 +118,7 @@ const ContactMe = () => {
 
 export default ContactMe;
 
-const StyledContactContainerWrapper = styled.div`
+const StyledContactContainerWrapper = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;

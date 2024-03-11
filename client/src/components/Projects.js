@@ -62,7 +62,7 @@ const projects = [
 
 const Portfolio = () => {
 	return (
-		<CenteredContainer>
+		<CenteredContainer id="projects">
 			<PortfolioContainer>
 				<Header>My Projects</Header>
 				<p>
@@ -102,7 +102,7 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-const CenteredContainer = styled.div`
+const CenteredContainer = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;

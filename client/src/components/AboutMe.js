@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const AboutMe = () => {
 	return (
-		<Container id="about-me">
+		<Container id="about">
 			<h1>About Me</h1>
 			<ContentContainer>
 				<Column>
@@ -46,7 +46,7 @@ const AboutMe = () => {
 
 export default AboutMe;
 
-const Container = styled.div`
+const Container = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -97,9 +97,9 @@ const Column = styled.div`
 	}
 
 	@media (max-width: 900px) {
-    width: 100%; 
-	border-bottom: black solid 3px;
-  }
+		width: 100%;
+		border-bottom: black solid 3px;
+	}
 `;
 
 const RightColumn = styled(Column)`
@@ -107,7 +107,7 @@ const RightColumn = styled(Column)`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
+
 	margin: 0 10px;
 	h2 {
 		font-family: "Roboto", sans-serif;

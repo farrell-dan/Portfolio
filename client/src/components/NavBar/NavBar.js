@@ -51,11 +51,26 @@ const NavBar = () => {
 					data-visible="false"
 					className="primary-navigation flex"
 				>
-
-<StyledLi className="nav__item"><StyledLink href="#home" className="nav__link active">Home</StyledLink></StyledLi>
-            <StyledLi className="nav__item"><StyledLink href="#about" className="nav__link">About Me</StyledLink></StyledLi>
-            <StyledLi className="nav__item"><StyledLink href="#project" className="nav__link">Projects</StyledLink></StyledLi>
-            <StyledLi className="nav__item"><StyledLink href="#CV" className="nav__link">Contact</StyledLink></StyledLi>
+					<StyledLi className="nav__item">
+						<StyledLink href="#home" className="nav__link active">
+							Home
+						</StyledLink>
+					</StyledLi>
+					<StyledLi className="nav__item">
+						<StyledLink href="#about" className="nav__link">
+							About Me
+						</StyledLink>
+					</StyledLi>
+					<StyledLi className="nav__item">
+						<StyledLink href="#projects" className="nav__link">
+							Projects
+						</StyledLink>
+					</StyledLi>
+					<StyledLi className="nav__item">
+						<StyledLink href="#contact" className="nav__link">
+							Contact
+						</StyledLink>
+					</StyledLi>
 
 					{/* {menuItems.map((menuItem) => (
 						<StyledLi
@@ -66,7 +81,7 @@ const NavBar = () => {
 								{menuItem.label}
 							</StyledLink>
 						</StyledLi>
-					))} */}	
+					))} */}
 				</StyledUl>
 			</StyledNav>
 		</div>
@@ -75,12 +90,12 @@ const NavBar = () => {
 
 export default NavBar;
 
-const menuItems = [
-	{ path: "/", label: "Home" },
-	{ path: "/about-me", label: "About Me" },
-	{ path: "/projects", label: "Projects" },
-	{ path: "/contact", label: "Contact Me" },
-];
+// const menuItems = [
+// 	{ path: "/", label: "Home" },
+// 	{ path: "/about-me", label: "About Me" },
+// 	{ path: "/projects", label: "Projects" },
+// 	{ path: "/contact", label: "Contact Me" },
+// ];
 
 const StyledNav = styled.nav`
 	display: flex;
