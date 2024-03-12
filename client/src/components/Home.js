@@ -81,11 +81,12 @@ const StyledImage = styled.img`
 	max-width: 115%;
 	max-height: 115%;
 	border-radius: 50%;
+	margin-left: 1.5rem;
 	object-fit: cover;
 	transition: transform 1s ease, opacity 3s ease;
 	box-shadow: 0 0 0 4px #ebebeb, 0 0 0 10px #23233b;
 	&:hover {
-		transform: scale(1.015);
+		transform: scale(1.04);
 		opacity: 0.85;
 	}
 `;
