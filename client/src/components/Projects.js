@@ -103,11 +103,11 @@ const Portfolio = () => {
 export default Portfolio;
 
 const CenteredContainer = styled.section`
-	display: flex;
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 5vh auto;
-	width: 80vw;
+	width: 80vw; */
 `;
 
 const PortfolioContainer = styled.div`
@@ -147,10 +147,10 @@ const ProjectCard = styled.div`
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	transition: transform 1s ease-in-out;
+	/* transition: transform 1s ease-in-out;
 
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.05); */
 	}
 `;
 

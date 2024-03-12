@@ -119,11 +119,11 @@ const ContactMe = () => {
 export default ContactMe;
 
 const StyledContactContainerWrapper = styled.section`
-	display: flex;
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 80vw;
-	margin: 5vh auto;
+	margin: 5vh auto; */
 `;
 
 const StyledContactContainer = styled.div`

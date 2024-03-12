@@ -31,6 +31,18 @@ const NavBar = () => {
 		}, 400);
 	});
 
+	const scrollToSection = (id) => {
+		const targetElement = document.getElementById(id);
+	
+		if (targetElement) {
+		  targetElement.scrollIntoView({
+			behavior: "smooth",
+			block: "center", 
+		  });
+		}
+	  };
+
+
 	const closeMenu = () => {
 		const primaryNav = document.querySelector(".primary-navigation");
 		primaryNav.setAttribute("data-visible", "false");
@@ -52,22 +64,22 @@ const NavBar = () => {
 					className="primary-navigation flex"
 				>
 					<StyledLi className="nav__item">
-						<StyledLink href="#home" className="nav__link active">
+						<StyledLink onClick={() => scrollToSection("home")}>
 							Home
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
-						<StyledLink href="#about" className="nav__link">
+						<StyledLink onClick={() => scrollToSection("about")}>
 							About Me
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
-						<StyledLink href="#projects" className="nav__link">
+						<StyledLink onClick={() => scrollToSection("projects")}>
 							Projects
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
-						<StyledLink href="#contact" className="nav__link">
+						<StyledLink onClick={() => scrollToSection("contact")}>
 							Contact
 						</StyledLink>
 					</StyledLi>
@@ -114,6 +126,8 @@ width: 100%;
 
 const StyledUl = styled.ul`
 	display: flex;
+	justify-content: right;
+	width: 100%;
 `;
 
 const StyledLi = styled.li`

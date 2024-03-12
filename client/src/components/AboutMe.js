@@ -48,10 +48,18 @@ const AboutMe = () => {
 export default AboutMe;
 
 const Container = styled.section`
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	width: 80vw;
+	margin: 5vh auto; */
+`;
+
+const ContentContainer = styled.div`
+display: flex;
+flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 	width: 80vw;
 	min-width: 450px;
 	min-height: 610px;
@@ -68,13 +76,6 @@ const Container = styled.section`
 		width: 100%;
 		text-align: center;
 	}
-`;
-
-const ContentContainer = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: start;
 `;
 
 const Column = styled.div`
