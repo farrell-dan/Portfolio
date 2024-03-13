@@ -5,34 +5,54 @@ import styled from "styled-components";
 const AboutMe = () => {
 	return (
 		<Container id="about">
-			
 			<ContentContainer>
-			<h1>About Me</h1>
+				<h1>About Me</h1>
 				<Column>
 					<h2>Biography</h2>
 					<p>
-						Daniel, pursuing a web development diploma, excels in HTML, CSS, and
-						JavaScript. His journey extends to Advanced Frontend with React,
-						demonstrating expertise in crafting responsive interfaces.
+						I am a dedicated professional currently transitioning to a career in
+						Full Stack Web Development. With a solid background in the health
+						and wellness field, I have honed my adaptability skills in diverse
+						environments. Coming from a life of team sports I excel while
+						working in a collaborative setting. After successfully completing my
+						diploma in Web Development, I am now well-equipped and enthusiastic
+						to apply my skills and embark on a fulfilling journey in this
+						dynamic field. Eager to leverage my expertise, I am committed to
+						creating innovative and user-centric solutions in the ever-evolving
+						digital landscape.
 					</p>
 					<p>
-						Venturing into NodeJS, he deploys robust servers, embraces RESTful
-						API principles, and engages in collaborative projects. His
-						proficiency in MongoDB allows seamless frontend-backend connection
-						for MERN applications.
+						I am a certified athletic therapist who is very passionate about
+						health and wellness. I am a quick learner who adapts easily in new
+						environments. Having played team sports my entire life, I thrive
+						while working as part of a team. I have enjoyed my experiences
+						working in clinics, gyms and on the field as an athletic therapist
+						and I am now looking for a new challenge.
 					</p>
 					<p>
-						Daniel's Athletic Therapy background, a Concordia graduate, brings
-						versatility. Work with Montreal Impact Soccer Schools and Gym Klub
-						20 showcases his commitment to continuous improvement and expertise
-						in areas like Speed, Agility, Quickness Training, and Balance
-						Training.
+						I believe I am the best candidate for the web developer position due
+						to a combination of my strong work ethic, passion for the field, and
+						unique skill set acquired through my experience as an athletic
+						therapist. My background in athletic therapy has honed my teamwork,
+						multitasking, and stress management abilities, making me adept at
+						collaborating effectively in dynamic environments. These skills are
+						transferable and essential in the fast-paced world of web
+						development.  
 					</p>
 					<p>
-						Beyond sports, Daniel's active approach extends to hockey, soccer,
-						rugby, cycling, hiking, snowboarding, and soccer refereeing. A team
-						player, problem solver, hard worker, and fast learner, Daniel brings
-						a dynamic approach to every endeavor.
+						My commitment to continuous learning aligns with the ever-evolving
+						nature of technology. As a quick learner, I am always eager to
+						embrace new challenges and stay updated on the latest trends in web
+						development. This enthusiasm for growth, coupled with my ability to
+						thrive in high-stress situations, positions me as a candidate
+						capable of adapting to the fast-paced and dynamic nature of the tech
+						industry.  
+					</p>
+					<p>
+						In summary, my work ethic, passion, teamwork skills, ability to
+						handle stress, and dedication to ongoing learning make me the ideal
+						candidate to contribute effectively to the collaborative and
+						innovative environment at your company.
 					</p>
 				</Column>
 				<RightColumn>
@@ -56,8 +76,8 @@ const Container = styled.section`
 `;
 
 const ContentContainer = styled.div`
-display: flex;
-flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	width: 80vw;
