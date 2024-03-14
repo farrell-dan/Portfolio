@@ -72,26 +72,27 @@ const Portfolio = () => {
 				<ProjectsContainer>
 					{projects.map((project) => (
 						<ProjectCard key={project.id}>
-							<ProjectImageContainer>
-								<Link to={`/projects/${project.title}`}>
+							<Link to={`/${project.title}`}>
+								<ProjectImageContainer>
 									<ProjectImage src={project.image} alt={project.title} />
-								</Link>
-								<HoverContent>
-									<h3>{project.title}</h3>
-									<p>{project.description}</p>
-									<GitHubIcon
-										href={project.githubLink}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<Icon size={32} icon={github} />
-									</GitHubIcon>
 
-									<DisplayIcon target="_blank" rel="noopener noreferrer">
-										<Icon size={32} icon={display} />
-									</DisplayIcon>
-								</HoverContent>
-							</ProjectImageContainer>
+									<HoverContent>
+										<h3>{project.title}</h3>
+										<p>{project.description}</p>
+										<GitHubIcon
+											href={project.githubLink}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<Icon size={32} icon={github} />
+										</GitHubIcon>
+
+										<DisplayIcon target="_blank" rel="noopener noreferrer">
+											<Icon size={32} icon={display} />
+										</DisplayIcon>
+									</HoverContent>
+								</ProjectImageContainer>
+							</Link>
 						</ProjectCard>
 					))}
 				</ProjectsContainer>
@@ -150,8 +151,8 @@ const ProjectCard = styled.div`
 	/* transition: transform 1s ease-in-out;
 
 	&:hover {
-		transform: scale(1.05); */
-	}
+		transform: scale(1.05); 
+	}*/
 `;
 
 const ProjectImageContainer = styled.div`
