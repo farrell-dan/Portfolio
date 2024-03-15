@@ -104,11 +104,11 @@ const Portfolio = () => {
 export default Portfolio;
 
 const CenteredContainer = styled.section`
-	/* display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 5vh auto;
-	width: 80vw; */
+	width: 80vw;
 `;
 
 const PortfolioContainer = styled.div`
@@ -206,7 +206,7 @@ const HoverContent = styled.div`
 	}
 `;
 
-const GitHubIcon = styled.a`
+const GitHubIcon = styled.div`
 	margin-top: 10px;
 	text-decoration: none;
 	color: #7ccdf4;
@@ -217,7 +217,7 @@ const GitHubIcon = styled.a`
 	}
 `;
 
-const DisplayIcon = styled.a`
+const DisplayIcon = styled.div`
 	margin-top: 10px;
 	text-decoration: none;
 	color: #7ccdf4;

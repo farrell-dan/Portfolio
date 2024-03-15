@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import ContactMe from "./Contact";
-import Home from "./Home";
+import Home from "./Me";
 import Projects from "./Projects";
-import MySportsCal from "./mySportsCal";
+import MySportsCal from "./Projects/mySportsCal";
 import NavBar from "./NavBar/NavBar";
 import styled from "styled-components";
+import ProjectSlingair from "./Projects/projectSlingAir";
+import Me from "./Me";
+import ECommerceProject from "./Projects/eCommerceProject";
 
 const App = () => {
 	return (
@@ -13,17 +16,16 @@ const App = () => {
 			<AppContainer>
 				<NavBar />
 				<ContentContainer>
-					<Home />
-					<AboutMe />
-					<Projects />
-					<ContactMe />
+				<Me />
+			<AboutMe />
+			<Projects />
+			<ContactMe />
 					<Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/about" element={<AboutMe />} />
-  <Route path="/projects" element={<Projects />} />
-  <Route path="/contact" element={<ContactMe />} />
-  <Route path="/mySportsCal" element={<MySportsCal />} />
-</Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/mySportsCal" element={<MySportsCal />} />
+						<Route path="/projectSlingAir" element={<ProjectSlingair />} />
+						<Route path="/eCommerceProject" element={<ECommerceProject />} />
+					</Routes>
 				</ContentContainer>
 			</AppContainer>
 		</Router>
