@@ -1,4 +1,4 @@
-import MyCV from "../assets/Daniel Farrell CV.png";
+import MyCV from "../../assets/Daniel Farrell CV.png";
 import DownloadButton from "./CVDownload";
 import styled from "styled-components";
 

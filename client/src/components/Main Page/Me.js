@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import DanielImage1 from "../assets/IMG_2243.JPG";
-import DanielImage2 from "../assets/IMG_9209.jpeg";
+import DanielImage1 from "../../assets/IMG_2243.JPG";
+import DanielImage2 from "../../assets/IMG_9209.jpeg";
 
 
 const Me = () => {

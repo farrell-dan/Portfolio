@@ -1,16 +1,21 @@
-import AboutMe from "./AboutMe";
-import ContactMe from "./Contact";
-import Me from "./Me";
-import Projects from "./Projects";
+import AboutMe from "./Main Page/AboutMe";
+import ContactMe from "./Main Page/Contact";
+import Me from "./Main Page/Me";
+import Projects from "./Main Page/Projects";
+import styled from "styled-components";
 
 const Home = () => {
 	return (
 		<>
-			<Me />
+			{/* <Me />
 			<AboutMe />
 			<Projects />
-			<ContactMe />
+			<ContactMe /> */}
 		</>
 	);
 };
 export default Home;
+
+const CenteredText = styled.h1 `
+
+`;

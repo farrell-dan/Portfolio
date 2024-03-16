@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutMe from "./AboutMe";
-import ContactMe from "./Contact";
-import Home from "./Me";
-import Projects from "./Projects";
+import AboutMe from "./Main Page/AboutMe";
+import ContactMe from "./Main Page/Contact";
+import Home from "./Main Page/Me";
+import Projects from "./Main Page/Projects";
 import MySportsCal from "./Projects/mySportsCal";
 import NavBar from "./NavBar/NavBar";
 import styled from "styled-components";
 import ProjectSlingair from "./Projects/projectSlingAir";
-import Me from "./Me";
+import Me from "./Main Page/Me";
 import ECommerceProject from "./Projects/eCommerceProject";
+import Update from "./Update";
 
 const App = () => {
 	return (
@@ -16,16 +17,18 @@ const App = () => {
 			<AppContainer>
 				<NavBar />
 				<ContentContainer>
-				<Me />
-			<AboutMe />
-			<Projects />
-			<ContactMe />
-					<Routes>
+					
+					<Update />
+					{/* <Me />
+					<AboutMe />
+					<Projects />
+					<ContactMe /> */}
+					{/* <Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/mySportsCal" element={<MySportsCal />} />
 						<Route path="/projectSlingAir" element={<ProjectSlingair />} />
 						<Route path="/eCommerceProject" element={<ECommerceProject />} />
-					</Routes>
+					</Routes> */}
 				</ContentContainer>
 			</AppContainer>
 		</Router>

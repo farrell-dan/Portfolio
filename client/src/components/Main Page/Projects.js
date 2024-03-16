@@ -4,11 +4,11 @@ import { Icon } from "react-icons-kit";
 import { github } from "react-icons-kit/icomoon/github";
 import { display } from "react-icons-kit/icomoon/display";
 // import Placeholder from "../assets/image-placeholder-500x500.jpg";
-import mySportsCalImage from "../assets/Project_Screenshots/mySportsCal.png";
-import NyanCatImage from "../assets/Project_Screenshots/Project Nyan Cat.png";
-import SlingAirImgae from "../assets/Project_Screenshots/Project SlingAir.png";
-import PortfolioImage from "../assets/Project_Screenshots/Portfolio.png";
-import ECommerceImage from "../assets/Project_Screenshots/E-Commerce Project.png";
+import mySportsCalImage from "../../assets/Project_Screenshots/mySportsCal.png";
+import NyanCatImage from "../../assets/Project_Screenshots/Project Nyan Cat.png";
+import SlingAirImgae from "../../assets/Project_Screenshots/Project SlingAir.png";
+import PortfolioImage from "../../assets/Project_Screenshots/Portfolio.png";
+import ECommerceImage from "../../assets/Project_Screenshots/E-Commerce Project.png";
 
 const projects = [
 	{
@@ -148,11 +148,11 @@ const ProjectCard = styled.div`
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	/* transition: transform 1s ease-in-out;
+	 transition: transform 1s ease-in-out;
 
 	&:hover {
 		transform: scale(1.05); 
-	}*/
+	}
 `;
 
 const ProjectImageContainer = styled.div`
@@ -206,7 +206,7 @@ const HoverContent = styled.div`
 	}
 `;
 
-const GitHubIcon = styled.div`
+const GitHubIcon = styled.a`
 	margin-top: 10px;
 	text-decoration: none;
 	color: #7ccdf4;
@@ -217,7 +217,7 @@ const GitHubIcon = styled.div`
 	}
 `;
 
-const DisplayIcon = styled.div`
+const DisplayIcon = styled.a`
 	margin-top: 10px;
 	text-decoration: none;
 	color: #7ccdf4;
