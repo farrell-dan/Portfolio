@@ -17,13 +17,16 @@ const App = () => {
 			<AppContainer>
 				<NavBar />
 				<ContentContainer>
-					<Update />
-					{/* <Routes>
+					{/* <Update /> */}
+					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/mySportsCal" element={<MySportsCal />} />
-						<Route path="/projectSlingAir" element={<ProjectSlingair />} />
-						<Route path="/eCommerceProject" element={<ECommerceProject />} />
-					</Routes> */}
+						<Route path="/Project SlingAir" element={<ProjectSlingair />} />
+						<Route
+							path="/E-Commerce Project"
+							element={<ECommerceProject />}
+						/>
+					</Routes>
 				</ContentContainer>
 			</AppContainer>
 		</Router>
