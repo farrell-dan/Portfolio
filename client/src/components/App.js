@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutMe from "./Main Page/AboutMe";
 import ContactMe from "./Main Page/Contact";
-import Home from "./Main Page/Me";
+import Home from "./Home";
 import Projects from "./Main Page/Projects";
 import MySportsCal from "./Projects/mySportsCal";
 import NavBar from "./NavBar/NavBar";
@@ -17,12 +17,7 @@ const App = () => {
 			<AppContainer>
 				<NavBar />
 				<ContentContainer>
-					
 					<Update />
-					{/* <Me />
-					<AboutMe />
-					<Projects />
-					<ContactMe /> */}
 					{/* <Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/mySportsCal" element={<MySportsCal />} />

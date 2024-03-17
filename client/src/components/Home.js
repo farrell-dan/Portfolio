@@ -7,10 +7,10 @@ import styled from "styled-components";
 const Home = () => {
 	return (
 		<>
-			{/* <Me />
+			<Me />
 			<AboutMe />
 			<Projects />
-			<ContactMe /> */}
+			<ContactMe />
 		</>
 	);
 };
