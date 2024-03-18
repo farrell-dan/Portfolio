@@ -64,8 +64,14 @@ const NavBar = () => {
 					className="primary-navigation flex"
 				>
 					<StyledLi className="nav__item">
-						<StyledLink onClick={() => scrollToSection("home")}>
+						<StyledLink onClick={() => scrollToSection("home")} className="dropdown-label">
 							Home
+							<ul className="dropdown-content">
+                <li className="dropdown-content--item" onClick={() => scrollToSection("home")} >Home</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("about")}>About Me</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("projects")}>Projects</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("contact")}>Contact Me</li>
+              </ul>
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">

@@ -64,3 +64,38 @@
 		background-color: white;
 	}
 }
+
+
+
+.dropdown-content{
+	position: absolute;
+	padding: 0;
+	display: none;
+	top: 50px;
+	list-style-type: none;
+	background-color: #03a9f4;
+  }
+  
+  .dropdown:hover .dropdown-content{
+	display: block;
+  }
+  
+  .dropdown{
+	padding: 16px 0;
+  }
+  
+  .dropdown-label{
+	margin: 0;
+  }
+  
+  .dropdown-content--item{
+	display: block;
+	text-align: left;
+	padding: 20px;
+	margin: 0;
+  }
+  
+  .dropdown-content--item:hover{
+	background-color: #1f90ff;
+  }
+  
