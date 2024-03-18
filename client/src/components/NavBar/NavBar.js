@@ -90,16 +90,6 @@ const NavBar = () => {
 						</StyledLink>
 					</StyledLi>
 
-					{/* {menuItems.map((menuItem) => (
-						<StyledLi
-							key={menuItem.path}
-							className={location.pathname === menuItem.path ? "active" : ""}
-						>
-							<StyledLink to={menuItem.path} onClick={closeMenu}>
-								{menuItem.label}
-							</StyledLink>
-						</StyledLi>
-					))} */}
 				</StyledUl>
 			</StyledNav>
 		</div>
@@ -107,13 +97,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// const menuItems = [
-// 	{ path: "/", label: "Home" },
-// 	{ path: "/about-me", label: "About Me" },
-// 	{ path: "/projects", label: "Projects" },
-// 	{ path: "/contact", label: "Contact Me" },
-// ];
 
 const StyledNav = styled.nav`
 position: fixed;

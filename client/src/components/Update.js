@@ -18,6 +18,6 @@ const CenteredText = styled.h1`
 	text-align: center;
 	color: white;
 	font-weight: bolder;
-	background-color: black;
+	background-color: teal;
 	z-index: 100;
 `;

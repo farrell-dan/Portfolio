@@ -17,8 +17,8 @@ const App = () => {
 			<AppContainer>
 				<NavBar />
 				<ContentContainer>
-					{/* <Update /> */}
-					<Routes>
+					<Update />
+					{/* <Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/mySportsCal" element={<MySportsCal />} />
 						<Route path="/Project SlingAir" element={<ProjectSlingair />} />
@@ -26,7 +26,7 @@ const App = () => {
 							path="/E-Commerce Project"
 							element={<ECommerceProject />}
 						/>
-					</Routes>
+					</Routes> */}
 				</ContentContainer>
 			</AppContainer>
 		</Router>
