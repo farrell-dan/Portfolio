@@ -66,12 +66,6 @@ const NavBar = () => {
 					<StyledLi className="nav__item">
 						<StyledLink onClick={() => scrollToSection("home")} className="dropdown-label">
 							Home
-							<ul className="dropdown-content">
-                <li className="dropdown-content--item" onClick={() => scrollToSection("home")} >Home</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("about")}>About Me</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("projects")}>Projects</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("contact")}>Contact Me</li>
-              </ul>
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
@@ -82,6 +76,12 @@ const NavBar = () => {
 					<StyledLi className="nav__item">
 						<StyledLink onClick={() => scrollToSection("projects")}>
 							Projects
+							<ul className="dropdown-content">
+                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 1")} >Project 1</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 2")}>Project 2</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 3")}>Project 3</li>
+                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 4")}>Project 4</li>
+              </ul>
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
