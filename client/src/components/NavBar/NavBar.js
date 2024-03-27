@@ -33,15 +33,14 @@ const NavBar = () => {
 
 	const scrollToSection = (id) => {
 		const targetElement = document.getElementById(id);
-	
-		if (targetElement) {
-		  targetElement.scrollIntoView({
-			behavior: "smooth",
-			block: "center", 
-		  });
-		}
-	  };
 
+		if (targetElement) {
+			targetElement.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+			});
+		}
+	};
 
 	const closeMenu = () => {
 		const primaryNav = document.querySelector(".primary-navigation");
@@ -64,7 +63,7 @@ const NavBar = () => {
 					className="primary-navigation flex"
 				>
 					<StyledLi className="nav__item">
-						<StyledLink onClick={() => scrollToSection("home")} className="dropdown-label">
+						<StyledLink onClick={() => scrollToSection("home")}>
 							Home
 						</StyledLink>
 					</StyledLi>
@@ -73,15 +72,35 @@ const NavBar = () => {
 							About Me
 						</StyledLink>
 					</StyledLi>
-					<StyledLi className="nav__item">
+					<StyledLi className="nav__item dropdown">
 						<StyledLink onClick={() => scrollToSection("projects")}>
 							Projects
 							<ul className="dropdown-content">
-                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 1")} >Project 1</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 2")}>Project 2</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 3")}>Project 3</li>
-                <li className="dropdown-content--item" onClick={() => scrollToSection("Project 4")}>Project 4</li>
-              </ul>
+								<li
+									className="dropdown-content--item"
+									onClick={() => scrollToSection("Project 1")}
+								>
+									Project 1
+								</li>
+								<li
+									className="dropdown-content--item"
+									onClick={() => scrollToSection("Project 2")}
+								>
+									Project 2
+								</li>
+								<li
+									className="dropdown-content--item"
+									onClick={() => scrollToSection("Project 3")}
+								>
+									Project 3
+								</li>
+								<li
+									className="dropdown-content--item"
+									onClick={() => scrollToSection("Project 4")}
+								>
+									Project 4
+								</li>
+							</ul>
 						</StyledLink>
 					</StyledLi>
 					<StyledLi className="nav__item">
@@ -89,7 +108,6 @@ const NavBar = () => {
 							Contact
 						</StyledLink>
 					</StyledLi>
-
 				</StyledUl>
 			</StyledNav>
 		</div>
@@ -99,11 +117,11 @@ const NavBar = () => {
 export default NavBar;
 
 const StyledNav = styled.nav`
-position: fixed;
-z-index: 100;
-top: 0;
-right: 0;
-width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;

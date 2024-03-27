@@ -73,10 +73,11 @@
 	display: none;
 	top: 50px;
 	list-style-type: none;
-	background-color: #03a9f4;
+	background-color: #040a1d;
   }
   
-  .dropdown:hover .dropdown-content{
+  .dropdown:hover .dropdown-content,
+.dropdown-content:hover {
 	display: block;
   }
   
@@ -96,6 +97,5 @@
   }
   
   .dropdown-content--item:hover{
-	background-color: #1f90ff;
+	background-color: #23233b;
   }
-  
