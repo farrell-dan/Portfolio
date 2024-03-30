@@ -20,14 +20,14 @@ const AboutMe = () => {
 						University, I am now well-equipped and looking to enter the tech
 						field.
 					</p>
-					<p>
+					{/* <p>
 						I have enjoyed my experiences working in clinics, gyms and on the
 						field as an athletic therapist. I enjoy staying active and moving.
 						Playing soccer, snowboarding, biking and running are some of my go
 						to activities and when I need a rest I enjoy working on puzzles. And
 						now in my free time I am trying to learn as much as I can in the web
 						development field.
-					</p>
+					</p> */}
 					{/* <p>
 						I believe I am the best candidate for the web developer position due
 						to a combination of my strong work ethic, passion for the field, and
